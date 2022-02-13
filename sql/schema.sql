@@ -29,13 +29,4 @@ CREATE TABLE cats_stat (
     whiskers_length_mode integer[]
 );
 
-alter table cats
-    add id serial;
-
-alter table cats
-    drop constraint cats_pkey;
-
-alter table cats
-    add constraint cats_pk
-        primary key (id);
 
